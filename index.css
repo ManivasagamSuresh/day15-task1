@@ -1,0 +1,105 @@
+.container{
+    position: relative;
+    height: 800px;
+    width: 1100px;
+    background-color: lightgrey;
+    left: 120px;
+}
+.buttons{
+    position: absolute;
+    top: 700px;
+    left: 400px;
+    
+}
+#button1{
+    border: 1px solid black;
+    border-radius: 30% ;
+    margin: 5px;
+    background-color: gray;
+}
+#button2{
+    border: 1px solid black;
+    border-radius: 30% ;
+    margin: 5px;
+    background-color: gray;
+}
+#button3{
+    border: 1px solid black;
+    border-radius: 30% ;
+    margin: 5px;
+    background-color: gray;
+}
+#button4{
+    border: 1px solid black;
+    border-radius: 30% ;
+    margin: 5px;
+    background-color: gray;
+}
+#button5{
+    border: 1px solid black;
+    border-radius: 30% ;
+    margin: 5px;
+    background-color: gray;
+}
+#button6{
+    border: 1px solid black;
+    border-radius: 30% ;
+    margin: 5px;
+    background-color: gray;
+}
+#button7{
+    border: 1px solid black;
+    border-radius: 30% ;
+    margin: 5px;
+    background-color: gray;
+}
+#button8{
+    border: 1px solid black;
+    border-radius: 30% ;
+    margin: 5px;
+    background-color: gray;
+}
+#button9{
+    border: 1px solid black;
+    border-radius: 30% ;
+    margin: 5px;
+    background-color: gray;
+}
+#button10{
+    border: 1px solid black;
+    border-radius: 30% ;
+    margin: 5px;
+    background-color: gray;
+}
+
+
+
+
+
+
+
+table{
+    margin-left: 200px;
+    width: 700px;
+    /* height :450px;*/
+    position: absolute;
+    top: 30px;
+
+
+}
+table,th,td{
+    /* margin-left: 100px; */
+    padding-left: 85px;
+    padding-right: 85px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+th{
+    height: 50px;
+    background-color: black;
+    color: white;
+}
+td{
+    background-color: white;
+}
