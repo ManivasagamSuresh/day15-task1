@@ -7,8 +7,7 @@ data.onload = function peopledata(){
     console.log(people);
     console.log(people[3].email);
     return people;
-
-}
+    }
 
 
 
@@ -65,6 +64,28 @@ return ele;
 table_h_row.append(th1,th2,th3);
 table.append(table_h_row);
 container.append(table);
+
+
+// row functions 
+let r1=rows("tr","id","row1");
+let r2=rows("tr","id","row2");
+let r3=rows("tr","id","row3");
+let r4=rows("tr","id","row4");
+let r5=rows("tr","id","row5");
+let r6=rows("tr","id","row6");
+let r7=rows("tr","id","row7");
+let r8=rows("tr","id","row8");
+let r9=rows("tr","id","row9");
+let r10=rows("tr","id","row10");
+
+function rows(tagname,attrname,attrvalue){
+    let ele=document.createElement(tagname);
+    ele.setAttribute(attrname,attrvalue);
+    return ele;
+    }
+
+    table.append(r1,r2,r3,r4,r5,r6,r7,r8,r9,r10);
+
 
 
 
@@ -126,29 +147,68 @@ function nine(){
     view(x);
 }
 function ten(){
+    
     var x = document.getElementById("button10").innerHTML;
     console.log(x);
-   
     view(x);
+
 }
 
 
 
 function view(x){
     
+
+    // var b = 10;
+    // for( i=(x-1)*b ; i<(x*b) ; i++ )
+    // {
+    //     let row = document.createElement("tr");
+    //     let table_data1=document.createElement("td");
+    //     table_data1.innerHTML=data.response[i].id;
+    //     let table_data2=document.createElement("td");
+    //     table_data2.innerHTML=data.response[i].name;
+    //     let table_data3=document.createElement("td");
+    //     table_data3.innerHTML=data.response[i].email;
+    //     row.append(table_data1,table_data2,table_data3);
+    //     table.append(row);
+    // }
+
+
+
     var b = 10;
-    for( i=(x-1)*b ; i<(x*b) ; i++ )
+    let i =(x-1)*b;
     {
-        let row = document.createElement("tr");
-        let table_data1=document.createElement("td");
-        table_data1.innerHTML=data.response[i].id;
-        let table_data2=document.createElement("td");
-        table_data2.innerHTML=data.response[i].name;
-        let table_data3=document.createElement("td");
-        table_data3.innerHTML=data.response[i].email;
-        row.append(table_data1,table_data2,table_data3);
-        table.append(row);
+    let row1 = document.getElementById("row1")
+        row1.innerHTML=`<td>${data.response[i].id}</td><td>${data.response[i].name}</td><td>${data.response[i].email}</td>`
+        let row2 = document.getElementById("row2")
+        row2.innerHTML=`<td>${data.response[i+1].id}</td><td>${data.response[i+1].name}</td><td>${data.response[i+1].email}</td>`
+        let row3 = document.getElementById("row3")
+        row3.innerHTML=`<td>${data.response[i+2].id}</td><td>${data.response[i+2].name}</td><td>${data.response[i+2].email}</td>`
+        let row4 = document.getElementById("row4")
+        row4.innerHTML=`<td>${data.response[i+3].id}</td><td>${data.response[i+3].name}</td><td>${data.response[i+3].email}</td>`
+        let row5 = document.getElementById("row5")
+        row5.innerHTML=`<td>${data.response[i+4].id}</td><td>${data.response[i+4].name}</td><td>${data.response[i+4].email}</td>`
+        let row6 = document.getElementById("row6")
+        row6.innerHTML=`<td>${data.response[i+5].id}</td><td>${data.response[i+5].name}</td><td>${data.response[i+5].email}</td>`
+        let row7 = document.getElementById("row7")
+        row7.innerHTML=`<td>${data.response[i+6].id}</td><td>${data.response[i+6].name}</td><td>${data.response[i+6].email}</td>`
+        let row8 = document.getElementById("row8")
+        row8.innerHTML=`<td>${data.response[i+7].id}</td><td>${data.response[i+7].name}</td><td>${data.response[i+7].email}</td>`
+        let row9 = document.getElementById("row9")
+        row9.innerHTML=`<td>${data.response[i+8].id}</td><td>${data.response[i+8].name}</td><td>${data.response[i+8].email}</td>`
+        let row10 = document.getElementById("row10")
+        row10.innerHTML=`<td>${data.response[i+9].id}</td><td>${data.response[i+9].name}</td><td>${data.response[i+9].email}</td>`        
+    
+    
+    
     }
+    
+    
+    
+    
+
+
+
 }
 
 
