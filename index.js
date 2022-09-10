@@ -7,10 +7,16 @@ data.onload = function peopledata(){
     console.log(people);
     console.log(people[3].email);
     return people;
+    first(people);
     }
-
-
-
+    var res = fetch("https://raw.githubusercontent.com/Rajavasanthan/jsondata/master/pagenation.json");
+    res.then((data)=> data.json()).then((value)=>{
+    
+    let arr = value;
+    console.log(value);
+    main(value);
+    });
+ 
 
 
 let container = document.createElement("div");
@@ -88,6 +94,35 @@ function rows(tagname,attrname,attrvalue){
 
 
 
+function main(value){
+    var b = 10;
+    let i = 0;
+    
+    let row1 = document.getElementById("row1")
+        row1.innerHTML=`<td>${value[i].id}</td><td>${value[i].name}</td><td>${value[i].email}</td>`
+        let row2 = document.getElementById("row2")
+        row2.innerHTML=`<td>${value[i+1].id}</td><td>${value[i+1].name}</td><td>${value[i+1].email}</td>`
+        let row3 = document.getElementById("row3")
+        row3.innerHTML=`<td>${value[i+2].id}</td><td>${value[i+2].name}</td><td>${value[i+2].email}</td>`
+        let row4 = document.getElementById("row4")
+        row4.innerHTML=`<td>${value[i+3].id}</td><td>${value[i+3].name}</td><td>${value[i+3].email}</td>`
+        let row5 = document.getElementById("row5")
+        row5.innerHTML=`<td>${value[i+4].id}</td><td>${value[i+4].name}</td><td>${value[i+4].email}</td>`
+        let row6 = document.getElementById("row6")
+        row6.innerHTML=`<td>${value[i+5].id}</td><td>${value[i+5].name}</td><td>${value[i+5].email}</td>`
+        let row7 = document.getElementById("row7")
+        row7.innerHTML=`<td>${value[i+6].id}</td><td>${value[i+6].name}</td><td>${value[i+6].email}</td>`
+        let row8 = document.getElementById("row8")
+        row8.innerHTML=`<td>${value[i+7].id}</td><td>${value[i+7].name}</td><td>${value[i+7].email}</td>`
+        let row9 = document.getElementById("row9")
+        row9.innerHTML=`<td>${value[i+8].id}</td><td>${value[i+8].name}</td><td>${value[i+8].email}</td>`
+        let row10 = document.getElementById("row10")
+        row10.innerHTML=`<td>${value[i+9].id}</td><td>${value[i+9].name}</td><td>${value[i+9].email}</td>`        
+}
+    
+    
+
+
 
 
 
@@ -156,7 +191,10 @@ function ten(){
 
 
 
-function view(x){
+      
+// console.log(`${data.response[1]}`)
+
+
     
 
     // var b = 10;
@@ -173,7 +211,7 @@ function view(x){
     //     table.append(row);
     // }
 
-
+    function view(x){
 
     var b = 10;
     let i =(x-1)*b;
@@ -205,10 +243,4 @@ function view(x){
     
     
     
-    
-
-
-
 }
-
-
