@@ -1,13 +1,13 @@
 .container{
     position: relative;
-    height: 800px;
+    height: 700px;
     width: 1300px;
     background-color: lightgrey;
     left: 120px;
 }
 .buttons{
     position: absolute;
-    top: 700px;
+    top: 650px;
     left: 500px;
     
 }
